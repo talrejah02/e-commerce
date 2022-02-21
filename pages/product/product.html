@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product.css">
+    <title>Trekkie</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <section class="header-logo">
+            <section class="header-svg"><svg xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                    class="iconify iconify--iconoir" width="32" height="32" preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 24 24">
+                    <path fill="none" stroke="#FFEA29" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                        d="m18 10l-3 1.5l-4-3l-1 5.5l3.5 3l.5 4.5m4-13v13M10 17l-2 4.5m.5-13C7 9.5 6 12 6 12l2 1m4-6.5a2 2 0 1 0 0-4a2 2 0 0 0 0 4Z">
+                    </path>
+                </svg></section>
+                <span class="heading"><a href="../../index.html" class="heading-link">Trekkie</a></span>
+        </section>
+        <section class="header-search">
+            <section class="header-svg">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                    role="img" class="iconify iconify--icon-park-outline" width="20" height="20"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48">
+                    <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4">
+                        <path d="M21 38c9.389 0 17-7.611 17-17S30.389 4 21 4S4 11.611 4 21s7.611 17 17 17Z"></path>
+                        <path stroke-linecap="round"
+                            d="M26.657 14.343A7.975 7.975 0 0 0 21 12c-2.21 0-4.21.895-5.657 2.343m17.879 18.879l8.485 8.485">
+                        </path>
+                    </g>
+                </svg>
+            </section>
+            <input class="header-search-input" type="text" placeholder="search" />
+        </section>
+        <section class="nav-right">
+            <a href="./product.html" class="nav-link">Shop</a>
+            <a href="../login/login.html" class="nav-link">Login</a>
+            <a href="../wishlist/wishlist.html" class="nav-link">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                    role="img" class="iconify iconify--ph" width="20" height="20" preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 256 256">
+                    <path fill="currentColor"
+                        d="M128 222a6 6 0 0 1-2.9-.8c-1.1-.5-25.9-14.6-51.1-37.2c-34.5-31.1-52-62-52-92a58 58 0 0 1 106-32.6A58 58 0 0 1 234 92c0 30-17.5 60.9-52 92c-25.2 22.6-50 36.7-51.1 37.2a6 6 0 0 1-2.9.8ZM80 46a46 46 0 0 0-46 46c0 57.3 77.8 107.3 94 117c16.2-9.7 94-59.7 94-117a46 46 0 0 0-88.5-17.7a5.9 5.9 0 0 1-11 0A46 46 0 0 0 80 46Z">
+                    </path>
+                </svg>
+            </a>
+            <a href="../cart/cart.html" class="nav-link">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                    role="img" class="iconify iconify--ph" width="20" height="20" preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 256 256">
+                    <path fill="currentColor"
+                        d="m211.7 132.3l12.2-66.9a7.7 7.7 0 0 0-1.8-6.5A7.9 7.9 0 0 0 216 56H54.7l-4.9-26.9A16 16 0 0 0 34.1 16H16a8 8 0 0 0 0 16h18.1l27.4 151a28 28 0 1 0 43.8 9h53.4a28 28 0 1 0 25.3-16H76.5l-4.4-24h116a24 24 0 0 0 23.6-19.7ZM92 204a12 12 0 1 1-12-12a12 12 0 0 1 12 12Zm104 0a12 12 0 1 1-12-12a12 12 0 0 1 12 12ZM57.6 72h148.8L196 129.4a8 8 0 0 1-7.9 6.6H69.2Z">
+                    </path>
+                </svg>
+            </a>
+        </section>
+    </nav>
+    <section class="main-wrapper">
+
+        <!-- ----------filter--------------- -->
+
+        <aside class="filter-wrapper">
+            <section class="filter-header">
+                <span class="filter-heading">Filters</span>
+                <button class="btn-clear">clear</button>
+            </section>
+            <section class="filter">
+                <span class="filter-subheading">price</span>
+                <section class="slider-text">
+                    <span class="labels">50</span>
+                    <span class="labels">100</span>
+                    <span class="labels">150</span>
+                </section>
+                <input type="range" min="50" max="150" value="" class="slider" step="3" id="myRange">
+            </section>
+            <section class="filter">
+                <span class="filter-subheading">category</span>
+                <section class="filter-box">
+                    <input type="checkbox" name="clothing" placeholder="" id="">
+                    <label class="labels" for="clothing">clothing</label>
+                </section>
+                <section class="filter-box">
+                    <input type="checkbox" name="gears" placeholder="" id="">
+                    <label class="labels" for="gears">gears</label>
+                </section>
+                <section class="filter-box">
+                    <input type="checkbox" name="footwear" placeholder="" id="">
+                    <label class="labels" for="footwear">footwear</label>
+                </section>
+            </section>
+            <section class="filter">
+                <span class="filter-subheading">Rating</span>
+                <section class="filter-box">
+                    <input type="radio" name="rating" id="four">
+                    <label class="labels" for="four">4 Stars & above</label>
+                </section>
+                <section class="filter-box">
+                    <input type="radio" name="rating" id="three">
+                    <label class="labels" for="three">3 Stars & above</label>
+                </section>
+                <section class="filter-box">
+                    <input type="radio" name="rating" id="two">
+                    <label class="labels" for="two">2 Stars & above</label>
+                </section>
+                <section class="filter-box">
+                    <input type="radio" name="rating" id="one">
+                    <label class="labels" for="one">1 star & above</label>
+                </section>
+            </section>
+            <section class="filter">
+                <span class="filter-subheading">Sort By</span>
+                <section class="filter-box">
+                    <input type="radio" name="sort" id="low">
+                    <label class="labels" for="low">Low to High</label>
+                </section>
+                <section class="filter-box">
+                    <input type="radio" name="sort" id="high">
+                    <label class="labels" for="high">High to Low</label>
+                </section>
+            </section>
+        </aside>
+        <!-- ----------card container--------------- -->
+
+        <section class="card-container">
+            <section class="card">
+                <img class="card-img" src="../../Assets/images/sweater.jpg" alt="" />
+                <section class="card-description">
+                    <section class="card-detail">
+                        <span class="card-category">category</span>
+                        <span class="card-title">product title</span>
+                    </section>
+                    <section class="product-price">
+                        <span class="price">$899</span>
+                        <s class="og-price">949</s>
+                        <span class="product-discount">49% off</span>
+                    </section>
+                    <button class="cart-btn ">Go to cart
+                        <span class="cart-svg"><svg xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                                class="iconify iconify--ic" width="18" height="18" preserveAspectRatio="xMidYMid meet"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 9c.55 0 1-.45 1-1V6h2c.55 0 1-.45 1-1s-.45-1-1-1h-2V2c0-.55-.45-1-1-1s-1 .45-1 1v2H9c-.55 0-1 .45-1 1s.45 1 1 1h2v2c0 .55.45 1 1 1zm-5 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2s-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2s2-.9 2-2s-.9-2-2-2zm-8.9-5h7.45c.75 0 1.41-.41 1.75-1.03l3.24-6.14a.998.998 0 0 0-.4-1.34a.996.996 0 0 0-1.36.41L15.55 11H8.53L4.27 2H2c-.55 0-1 .45-1 1s.45 1 1 1h1l3.6 7.59l-1.35 2.44C4.52 15.37 5.48 17 7 17h11c.55 0 1-.45 1-1s-.45-1-1-1H7l1.1-2z"
+                                    fill="currentColor"></path>
+                            </svg></span>
+                    </button>
+                </section>
+                <section class="card-badge">BEST SELLER</section>
+                <section class="card-badge two">BEST value</section>
+                <span class="wishlist-badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        aria-hidden="true" role="img" class="iconify iconify--ph" width="22" height="22"
+                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256">
+                        <path class="outline"
+                            d="M128 216S28 160 28 92a52 52 0 0 1 100-20a52 52 0 0 1 100 20c0 68-100 124-100 124z">
+                        </path>
+                        <path class="inside"
+                            d="M128 224a7.8 7.8 0 0 1-3.9-1C119.8 220.6 20 163.9 20 92a60 60 0 0 1 108-36a60 60 0 0 1 108 36c0 30.6-17.7 62-52.6 93.4a314.3 314.3 0 0 1-51.5 37.6a7.8 7.8 0 0 1-3.9 1zm-3.9-15zM80 48a44 44 0 0 0-44 44c0 55.2 74 103.7 92 114.7c18-11 92-59.5 92-114.7a44 44 0 0 0-84.6-17a8 8 0 0 1-14.8 0A43.8 43.8 0 0 0 80 48z">
+                        </path>
+                    </svg>
+                </span>
+            </section>
+            <section class="card">
+                <img class="card-img" src="../../Assets/images/bag.jpg" alt="" />
+                <section class="card-description">
+                    <section class="card-detail">
+                        <span class="card-category">category</span>
+                        <span class="card-title">product title</span>
+                    </section>
+                    <section class="product-price">
+                        <span class="price">$899</span>
+                        <s class="og-price">949</s>
+                        <span class="product-discount">49% off</span>
+                    </section>
+                    <button class="cart-btn">Add to cart
+                        <span class="cart-svg"><svg xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                                class="iconify iconify--ic" width="18" height="18" preserveAspectRatio="xMidYMid meet"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 9c.55 0 1-.45 1-1V6h2c.55 0 1-.45 1-1s-.45-1-1-1h-2V2c0-.55-.45-1-1-1s-1 .45-1 1v2H9c-.55 0-1 .45-1 1s.45 1 1 1h2v2c0 .55.45 1 1 1zm-5 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2s-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2s2-.9 2-2s-.9-2-2-2zm-8.9-5h7.45c.75 0 1.41-.41 1.75-1.03l3.24-6.14a.998.998 0 0 0-.4-1.34a.996.996 0 0 0-1.36.41L15.55 11H8.53L4.27 2H2c-.55 0-1 .45-1 1s.45 1 1 1h1l3.6 7.59l-1.35 2.44C4.52 15.37 5.48 17 7 17h11c.55 0 1-.45 1-1s-.45-1-1-1H7l1.1-2z"
+                                    fill="currentColor"></path>
+                            </svg></span>
+                    </button>
+                </section>
+                <section class="card-badge two">BEST value</section>
+                <span class="wishlist-badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        aria-hidden="true" role="img" class="iconify iconify--ph" width="22" height="22"
+                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256">
+                        <path class="outline"
+                            d="M128 216S28 160 28 92a52 52 0 0 1 100-20a52 52 0 0 1 100 20c0 68-100 124-100 124z">
+                        </path>
+                        <path class="inside"
+                            d="M128 224a7.8 7.8 0 0 1-3.9-1C119.8 220.6 20 163.9 20 92a60 60 0 0 1 108-36a60 60 0 0 1 108 36c0 30.6-17.7 62-52.6 93.4a314.3 314.3 0 0 1-51.5 37.6a7.8 7.8 0 0 1-3.9 1zm-3.9-15zM80 48a44 44 0 0 0-44 44c0 55.2 74 103.7 92 114.7c18-11 92-59.5 92-114.7a44 44 0 0 0-84.6-17a8 8 0 0 1-14.8 0A43.8 43.8 0 0 0 80 48z">
+                        </path>
+                    </svg>
+                </span>
+            </section>
+            <section class="card">
+                <img class="card-img" src="../../Assets/images/tent.jpg" alt="" />
+                <section class="card-description">
+                    <section class="card-detail">
+                        <span class="card-category">category</span>
+                        <span class="card-title">product title</span>
+                    </section>
+                    <section class="product-price">
+                        <span class="price">$899</span>
+                        <s class="og-price">949</s>
+                        <span class="product-discount">49% off</span>
+                    </section>
+                    <button class="cart-btn">Add to cart
+                        <span class="cart-svg"><svg xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                                class="iconify iconify--ic" width="18" height="18" preserveAspectRatio="xMidYMid meet"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 9c.55 0 1-.45 1-1V6h2c.55 0 1-.45 1-1s-.45-1-1-1h-2V2c0-.55-.45-1-1-1s-1 .45-1 1v2H9c-.55 0-1 .45-1 1s.45 1 1 1h2v2c0 .55.45 1 1 1zm-5 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2s-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2s2-.9 2-2s-.9-2-2-2zm-8.9-5h7.45c.75 0 1.41-.41 1.75-1.03l3.24-6.14a.998.998 0 0 0-.4-1.34a.996.996 0 0 0-1.36.41L15.55 11H8.53L4.27 2H2c-.55 0-1 .45-1 1s.45 1 1 1h1l3.6 7.59l-1.35 2.44C4.52 15.37 5.48 17 7 17h11c.55 0 1-.45 1-1s-.45-1-1-1H7l1.1-2z"
+                                    fill="currentColor"></path>
+                            </svg></span>
+                    </button>
+                </section>
+                <section class="card-badge">BEST SELLER</section>
+                <span class="wishlist-badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        aria-hidden="true" role="img" class="iconify iconify--ph" width="22" height="22"
+                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256">
+                        <path class="outline"
+                            d="M128 216S28 160 28 92a52 52 0 0 1 100-20a52 52 0 0 1 100 20c0 68-100 124-100 124z">
+                        </path>
+                        <path class="inside"
+                            d="M128 224a7.8 7.8 0 0 1-3.9-1C119.8 220.6 20 163.9 20 92a60 60 0 0 1 108-36a60 60 0 0 1 108 36c0 30.6-17.7 62-52.6 93.4a314.3 314.3 0 0 1-51.5 37.6a7.8 7.8 0 0 1-3.9 1zm-3.9-15zM80 48a44 44 0 0 0-44 44c0 55.2 74 103.7 92 114.7c18-11 92-59.5 92-114.7a44 44 0 0 0-84.6-17a8 8 0 0 1-14.8 0A43.8 43.8 0 0 0 80 48z">
+                        </path>
+                    </svg>
+                </span>
+            </section>
+             <section class="card">
+                <img class="card-img" src="../../Assets/images/jacket.jpg" alt="" />
+                <section class="card-description">
+                    <section class="card-detail">
+                        <span class="card-category">category</span>
+                        <span class="card-title">product title</span>
+                    </section>
+                    <section class="product-price">
+                        <span class="price">$899</span>
+                        <s class="og-price">949</s>
+                        <span class="product-discount">49% off</span>
+                    </section>
+                    <button class="cart-btn">Add to cart
+                        <span class="cart-svg"><svg xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                                class="iconify iconify--ic" width="18" height="18" preserveAspectRatio="xMidYMid meet"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 9c.55 0 1-.45 1-1V6h2c.55 0 1-.45 1-1s-.45-1-1-1h-2V2c0-.55-.45-1-1-1s-1 .45-1 1v2H9c-.55 0-1 .45-1 1s.45 1 1 1h2v2c0 .55.45 1 1 1zm-5 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2s-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2s2-.9 2-2s-.9-2-2-2zm-8.9-5h7.45c.75 0 1.41-.41 1.75-1.03l3.24-6.14a.998.998 0 0 0-.4-1.34a.996.996 0 0 0-1.36.41L15.55 11H8.53L4.27 2H2c-.55 0-1 .45-1 1s.45 1 1 1h1l3.6 7.59l-1.35 2.44C4.52 15.37 5.48 17 7 17h11c.55 0 1-.45 1-1s-.45-1-1-1H7l1.1-2z"
+                                    fill="currentColor"></path>
+                            </svg></span>
+                    </button>
+                </section>
+                <section class="card-badge">BEST SELLER</section>
+                <section class="card-badge two">BEST value</section>
+                <span class="wishlist-badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        aria-hidden="true" role="img" class="iconify iconify--ph" width="22" height="22"
+                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256">
+                        <path class="outline"
+                            d="M128 216S28 160 28 92a52 52 0 0 1 100-20a52 52 0 0 1 100 20c0 68-100 124-100 124z">
+                        </path>
+                        <path class="inside"
+                            d="M128 224a7.8 7.8 0 0 1-3.9-1C119.8 220.6 20 163.9 20 92a60 60 0 0 1 108-36a60 60 0 0 1 108 36c0 30.6-17.7 62-52.6 93.4a314.3 314.3 0 0 1-51.5 37.6a7.8 7.8 0 0 1-3.9 1zm-3.9-15zM80 48a44 44 0 0 0-44 44c0 55.2 74 103.7 92 114.7c18-11 92-59.5 92-114.7a44 44 0 0 0-84.6-17a8 8 0 0 1-14.8 0A43.8 43.8 0 0 0 80 48z">
+                        </path>
+                    </svg>
+                </span>
+            </section>
+            <section class="card">
+                <img class="card-img" src="../../Assets/images/sweater.jpg" alt="" />
+                <section class="card-description">
+                    <section class="card-detail">
+                        <span class="card-category">category</span>
+                        <span class="card-title">product title</span>
+                    </section>
+                    <section class="product-price">
+                        <span class="price">$899</span>
+                        <s class="og-price">949</s>
+                        <span class="product-discount">49% off</span>
+                    </section>
+                    <button class="cart-btn">Add to cart
+                        <span class="cart-svg"><svg xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                                class="iconify iconify--ic" width="18" height="18" preserveAspectRatio="xMidYMid meet"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 9c.55 0 1-.45 1-1V6h2c.55 0 1-.45 1-1s-.45-1-1-1h-2V2c0-.55-.45-1-1-1s-1 .45-1 1v2H9c-.55 0-1 .45-1 1s.45 1 1 1h2v2c0 .55.45 1 1 1zm-5 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2s-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2s2-.9 2-2s-.9-2-2-2zm-8.9-5h7.45c.75 0 1.41-.41 1.75-1.03l3.24-6.14a.998.998 0 0 0-.4-1.34a.996.996 0 0 0-1.36.41L15.55 11H8.53L4.27 2H2c-.55 0-1 .45-1 1s.45 1 1 1h1l3.6 7.59l-1.35 2.44C4.52 15.37 5.48 17 7 17h11c.55 0 1-.45 1-1s-.45-1-1-1H7l1.1-2z"
+                                    fill="currentColor"></path>
+                            </svg></span>
+                    </button>
+                </section>
+                <section class="card-badge two">BEST value</section>
+                <span class="wishlist-badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        aria-hidden="true" role="img" class="iconify iconify--ph" width="22" height="22"
+                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256">
+                        <path class="outline"
+                            d="M128 216S28 160 28 92a52 52 0 0 1 100-20a52 52 0 0 1 100 20c0 68-100 124-100 124z">
+                        </path>
+                        <path class="inside"
+                            d="M128 224a7.8 7.8 0 0 1-3.9-1C119.8 220.6 20 163.9 20 92a60 60 0 0 1 108-36a60 60 0 0 1 108 36c0 30.6-17.7 62-52.6 93.4a314.3 314.3 0 0 1-51.5 37.6a7.8 7.8 0 0 1-3.9 1zm-3.9-15zM80 48a44 44 0 0 0-44 44c0 55.2 74 103.7 92 114.7c18-11 92-59.5 92-114.7a44 44 0 0 0-84.6-17a8 8 0 0 1-14.8 0A43.8 43.8 0 0 0 80 48z">
+                        </path>
+                    </svg>
+                </span>
+            </section>
+
+        </section>
+
+    </section>
+</body>
+
+</html>
