@@ -7,6 +7,7 @@
     height: 90vh;
     width: 100%;
     background-color: var(--secondary-grey);
+    margin-top: 3.3rem;
 }
 
 .login-card {
@@ -48,6 +49,11 @@
     border-bottom: 2px solid var(--accent);
     transition: 0.4s;
     transition-timing-function: linear;
+}
+
+.input-group:focus-within .input-svg {
+    fill: var(--accent);
+    transition: 0.5s;
 }
 
 .input-svg {
@@ -100,7 +106,8 @@ label {
     border-radius: 4px;
     font-size: 0.8rem;
 }
-.login-btn:hover{
+
+.login-btn:hover {
     cursor: pointer;
     background-color: var(--btn-primary-hover);
     transition: 0.3s;
