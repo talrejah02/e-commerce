@@ -32,7 +32,7 @@
 /* --------card--------- */
 .horizontal {
     flex-direction: row;
-    min-width:30rem;
+    min-width:31rem;
 }
 
 .horizontal .card-header-info {
@@ -47,8 +47,10 @@
     border-top-right-radius: unset;
 }
 
-.card-description {
+.horizontal .card-description {
     width: 50%;
+    gap: 0;
+    padding-right:0 ;
 }
 
 .product-qty {
@@ -115,7 +117,7 @@
 
 .group-subhead {
     font-size: 0.9rem;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .bold {
