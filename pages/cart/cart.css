@@ -7,7 +7,6 @@
     width: 100%;
     height: 77vh;
     background-color: var(--secondary-grey);
-
 }
 
 .page-header {
@@ -33,7 +32,7 @@
 /* --------card--------- */
 .horizontal {
     flex-direction: row;
-    min-width: 450px;
+    min-width:30rem;
 }
 
 .horizontal .card-header-info {
@@ -51,23 +50,27 @@
 .card-description {
     width: 50%;
 }
-.product-qty{
+
+.product-qty {
     margin: 0.5rem 0;
     display: flex;
     align-items: center;
     gap: 15px;
 }
-.qty-btn{
+
+.qty-btn {
     background-color: var(--secondary-grey);
-    border: none;    
+    border: none;
     border-radius: 50%;
     padding: 0.1rem 0rem;
 }
-.qty-btn-svg{
+
+.qty-btn-svg {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .cart-btn {
     background-color: var(--primary);
     color: var(--font-primary);
@@ -84,7 +87,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-  
+
 
 }
 
