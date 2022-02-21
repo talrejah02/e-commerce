@@ -52,7 +52,7 @@
     width: 50%;
 }
 .product-qty{
-    margin: 0.5rem 0 0.5rem 0;
+    margin: 0.5rem 0;
     display: flex;
     align-items: center;
     gap: 15px;
@@ -61,7 +61,7 @@
     background-color: var(--secondary-grey);
     border: none;    
     border-radius: 50%;
-    padding: 0.1rem 0rem 0.1rem 0rem;
+    padding: 0.1rem 0rem;
 }
 .qty-btn-svg{
     display: flex;
@@ -94,7 +94,7 @@
     justify-content: space-between;
     height: 70%;
     padding: 1rem;
-    background-color: rgb(253, 253, 253);
+    background-color: var(--white);
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
 }
