@@ -13,7 +13,7 @@
     display: flex;
     background-color: var(--white);
     border-radius: 7px;
-    box-shadow: 0px 0px 6px 1px #cdc9c9;
+    box-shadow: var(--card-shadow)
 }
 
 .login-hero-img {
@@ -95,7 +95,7 @@ label {
     margin: 1.2rem 1rem 1.5rem 0rem;
     background-color: var(--btn-primary);
     color: var(--white);
-    padding: 0.7rem 1.1rem 0.7rem 1.1rem;
+    padding: 0.7rem 1.1rem;
     border: none;
     border-radius: 4px;
     font-size: 0.8rem;
