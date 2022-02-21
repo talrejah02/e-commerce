@@ -75,7 +75,10 @@
 }
 
 .nav-link {
+    display: flex;
+    align-items: center;
     font-size: 0.9rem;
+    color: var(--font-primary);
 }
 
 .nav-link:hover {
