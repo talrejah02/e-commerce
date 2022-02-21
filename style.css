@@ -24,6 +24,7 @@
 }
 
 .nav {
+    width:100%;
     background-color: var(--secondary);
     color: var(--font-primary);
 }
