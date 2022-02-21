@@ -9,6 +9,7 @@
     --accent-light: #726d3c;
     --font-primary: #f1f1f1;
     --font-secondary: #b4b3b3;
+    --font-secondary-dark: #3b3b3b;
     --btn-primary: #2489bb;
     --btn-primary-hover: #017DBC;
     --white: #ffffff;
@@ -24,6 +25,8 @@
 }
 
 .nav {
+    position: fixed;
+    top: 0;
     width:100%;
     background-color: var(--secondary);
     color: var(--font-primary);
@@ -89,6 +92,7 @@
 /*--------------------hero---------------*/
 
 .hero {
+    margin-top: 3.2rem;
     height: 20rem;
 }
 
@@ -101,10 +105,47 @@
     height: 100%;
 }
 
+.category-nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 2rem 0rem;
+    padding: 1rem;
+    background-color: var( --secondary-grey);
+}
+.category-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white);
+    color: var(--font-secondary-dark);
+    padding: 0.5rem;
+    box-shadow: var(--card-shadow);
+    border-radius: 7px;
+    width: max-content;
+}
+.category-link:hover{
+    background-color: var(--secondary-light);
+    color: var(--font-secondary);
+
+}
+.category-link-text{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.category-img{
+    border-radius: 7px;
+    width: 5rem;
+    height: 5rem;
+    margin-right: 0.4rem;
+}
 /* -----------container------------------ */
 
 .category-container {
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
     justify-content: space-between;
     background-color: var(--secondary-grey);
     padding: 1rem;
